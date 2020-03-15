@@ -1,0 +1,327 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            .body{
+                position: relative;
+                margin-bottom: 500px;
+            }
+            .header{
+                width: 100%;
+                height: 100px;
+                background-color: rgb(255, 255, 255);
+                border-bottom: 1px gray solid;
+                top: 0px;
+                left: 0px;
+                right: 0px;
+            }
+            .logo{
+                position: absolute;margin-top: 5px;margin-left: 5px;
+                background-size: contain;
+                height: 90;
+                width: 90;
+            }
+            .btngroup{
+                width:1000px;
+                height: 90px;
+                margin-left: 120px;
+                margin-top: 5px;
+            }
+            .btn{
+                width: 140px;
+                height: 30px;               
+                display: inline-block;
+                margin-top: 5px;
+                opacity: 1;
+            }
+            .btn2{
+                width: 140px;
+                height: 30px;               
+                margin-top: 5px;
+            }
+            .dropdown{
+                display: inline-block;
+            }
+            .dropdown-content{
+                display: none;
+                position: absolute;
+                background-color: white;
+                min-width: 140px;
+            }
+            .dropdown-content a{
+                text-decoration: none;
+                display: block;
+                color: black;
+            }
+            .dropdown:hover .dropdown-content{
+                display: block;
+            }
+            .dropdown-content a:hover{
+                background-color: gainsboro;
+            }
+            .dropdown:hover .btn2{
+                background-color: gainsboro;
+            }
+            .btn:hover{
+                opacity: 0.3;
+            }
+            .btn:active{
+                opacity: 1;
+            }
+            .btn_link{
+                text-decoration: none;
+                color: black;
+                line-height: 30px;
+                padding: 0 10px;
+            }
+            .btn_link:active{
+                color: rgb(51, 0, 255);
+                opacity: 1;
+            }
+            .sidebar_left{
+                width:200px;
+                height: 1000px;
+                float: left;
+            }
+            .sidebar_btngroup{
+                width: 180px;
+                height: 800px;
+                margin-left: 10px;
+            }
+            .sidebar_btn{
+                width: 160px;
+                height: 30px;
+                margin-top: 10px;
+                margin-left: 10px;
+                opacity: 1;
+            }
+            .sidebar_btn:hover{
+                opacity: 0.3;
+            }
+            .sidebar_btn:active{
+                opacity: 1;
+            }
+            .sidebar_btn_link{
+                text-decoration: none;
+                color: black;
+                line-height: 30px;
+                padding: 0 10px;
+            }
+            .sidebar_btn_link:active{
+                color: coral;
+            }
+            .content{
+                width: 100%;
+                height: 1000px;
+            }
+            .orange{
+                width: 1300px;
+                height: 400px;
+            }
+            .blue{
+                width: 300px;
+                height: 300px;
+                margin-left: 50px;
+                margin-top: 10px;
+                display:inline-block;
+            }
+            .green{
+                width: 270px;
+                margin-top: 5px;
+                margin-left: 27px;
+                display: inline-block;
+                text-align: center;
+            }
+            .container{
+                height: 100%;
+                width: 100%;
+            }
+            .bgsize{
+                width: 300px;
+                height: 300px;
+                background-size:contain;
+            }
+            .img1{
+                height: 300px;
+                width: 300px;
+                background-image: url(./img/1.webp);
+                background-size: contain;
+            }
+            .img6{
+                height: 300px;
+                width: 300px;
+                background-image: url(./img/6.webp);
+                background-size: contain;
+                display: none;
+            }
+            .img1:hover .img6{
+                display: block;
+            }
+            .img2{
+                height: 300px;
+                width: 300px;
+                background-image: url(./img/2.webp);
+                background-size: contain;
+            }
+            .img5{
+                height: 300px;
+                width: 300px;
+                background-image: url(./img/5.webp);
+                background-size: contain;
+                display: none;
+            }
+            .img2:hover .img5{
+                display: block;
+            }
+            .img4{
+                height: 300px;
+                width: 300px;
+                background-image: url(./img/4.webp);
+                background-size: contain;
+                position: relative;
+            }
+            .img4-1{
+                height: 300px;
+                width: 300px;
+                background-image: url(./img/封存/190628_togather_logo_01-25.png);
+                background-size: contain;
+                background-repeat: no-repeat;
+                position: absolute;top: 100px;
+            }  
+            .img3{
+                height: 300px;
+                width: 300px;
+                background-image: url(./img/3.webp);
+                background-size: 300px 300px;
+                position: relative;
+            }
+            .img3-1{
+                height: 300px;
+                width: 300px;
+                background-image: url(./img/封存/190628_togather_logo_01-26.png);
+                background-size: contain;
+                background-repeat: no-repeat;
+                position: absolute;top: 100px;
+            }        
+            </style>
+    </head>
+    <body class="=body" style="margin-top: 0px;margin-left: 0px;margin-right: 0px;">
+            <div class="header">
+                <img  src="./img/lego.webp" class="logo">
+                    <div class="btngroup">
+                        <div class="btn"><a class="btn_link" href="">首頁</a></div>
+                        <div class="btn"><a class="btn_link" href="">Brand 品牌</a></div>
+
+                        <div class="dropdown">
+                            <div class="btn2">所有商品</div>
+                            <div class="dropdown-content">
+                                <a href="">商品1</a>
+                                <a href="">商品2</a>
+                                <a href="">商品3</a>
+                            </div>
+                        </div>
+
+
+                        <div class="btn"><a class="btn_link" href="">現貨商品</a></div>
+                        <div class="btn"><a class="btn_link" href="">熱賣商品</a></div>
+                        <div class="btn"><a class="btn_link" href="">批發及商業合作</a></div>
+                        <br>
+                        <div class="btn"><a class="btn_link" href="">農歷新年大減價</a></div>
+                        <div class="btn"><a class="btn_link" href="">消毒酒精系列</a></div>
+                     </div>
+            </div>
+            <div class="container">
+                <div class="sidebar_left">
+                    <div class="sidebar_btngroup">
+                        <div class="sidebar_btn"><a class="sidebar_btn_link" href="">現貨商品</a></div>
+                        <div class="sidebar_btn"><a class="sidebar_btn_link" href="">Brand(品牌)</a></div>
+                        <div class="sidebar_btn"><a class="sidebar_btn_link" href="">熱賣商品</a></div>
+                        <div class="sidebar_btn"><a class="sidebar_btn_link" href="">最新商品</a></div>
+                        <div class="sidebar_btn"><a class="sidebar_btn_link" href="">所有商品</a></div>
+                        <div class="sidebar_btn"><a class="sidebar_btn_link" href="">清貨大減價</a></div>
+                        <div class="sidebar_btn"><a class="sidebar_btn_link" href="">批發商品</a></div>
+                        <div class="sidebar_btn"><a class="sidebar_btn_link" href="">農歷新年大減價</a></div>
+                        <div class="sidebar_btn"><a class="sidebar_btn_link" href="">酒精</a></div>
+
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="orange">
+                        <div class="blue">
+                            <a href=""><div class="img1">
+                                <div class="img6"></div>
+                            </div></a>
+                            <div class="green">
+                                <p>現貨 adidas Men's SENSEBOOST GO<br>
+                                    Pureboost(男裝)-EU41.5//42//42.5<br>
+                                    HK$429.00<br>
+                                    <s>HK$1,200.00</s>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="blue">
+                            <a href=""><div class="img2">
+                                <div class="img5"></div>
+                            </div></a>
+                            <div class="green">
+                                <p>預訂 Superstar Women's (FU7444) <br>
+                                    HK$399.90<br>
+                                    <s>HK$699.00</s><br>
+                                    &nbsp;
+                                </p>
+                            </div>
+                        </div>
+                        <div class="blue">
+                            <a href=""><div class="img4">
+                                <div class="img4-1"></div>
+                            </div></a>
+                            <div class="green">
+                                <p>預訂 Bikenstock Gizeh EVA Sandal<br>
+                                    HK$289.90<br>
+                                    <s>HK$599.00</s><br>
+                                    &nbsp;
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="orange">
+                        <div class="blue">
+                            <a href="">
+                                <div class="img3">
+                                    <div class="img3-1"></div>
+                            </div></a>
+                            <div class="green">
+                                <p>預訂 adidas Stan smith Drange(EES863)<br>
+                                女裝<br>
+                                HK$399.00<br>
+                                &nbsp;
+                                </p>
+                            </div>
+                        </div>
+                        <div class="blue">
+                            <a href=""><img class="bgsize" src="./img/5.webp"></a>
+                            <div class="green">
+                                <p>預訂 adidas Stan smith Yellow(EF9320)<br>
+                                女裝<br>
+                                HK$399.90<br>
+                                &nbsp;
+                            </p>
+                            </div>
+                        </div>
+                        <div class="blue">
+                            <a href=""><img class="bgsize" src="./img/6.webp"></a>
+                            <div class="green">
+                                <p>現貨 adidas Men's Ultraboost19<br>
+                                黑色 (G54009)<br>
+                                HK$659.00<br>
+                                &nbsp;
+                            </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+  
+
+    </body>
+</html>

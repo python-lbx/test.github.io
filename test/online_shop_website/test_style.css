@@ -1,0 +1,72 @@
+.bg{
+    margin-bottom: 200px;
+}
+.blue{
+    height:700px;
+    width: 500px;
+    border: 1px black solid;
+}
+.grey{
+    border: 1px black solid;
+    margin: 10 auto;
+    background-image: url(file:///C:/Users/%E9%A2%A8/Desktop/html/online_shop_website/online_shop_website/img/1.webp);
+    background-size: contain;
+    width: 400;
+    height: 400;
+}
+.green{
+    height:200px;
+    width: 400px;
+    border: 1px black solid;
+    margin: 10 auto;
+    background-image: url(file:///C:/Users/%E9%A2%A8/Desktop/html/online_shop_website/online_shop_website/img/1.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.dropdown{
+    display: inline-block;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: rgb(216, 129, 129)226, 205, 205;
+    min-width: 100%;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.dropbtn{
+    background-color: rgb(0, 255, 94);
+    color: white;
+    border:1px black solid;
+    cursor: move;
+    width: 100px;
+    height: 20px;
+    text-align: center;
+    margin-left: 500px;
+}
+.dropdown2{
+    display: inline-block;
+}
+.dropdown-content2{
+    display: none;
+    position: absolute;
+    background-color:rgb(255, 255, 0);
+    min-width: 102px;
+    margin-left: 500px;
+}
+.dropdown-content2 a{
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content2 a:hover{
+    background-color: coral;
+}
+.dropdown2:hover .dropdown-content2{
+    display: block;
+}
+.dropdown2:hover .dropbtn{
+    background-color: rgb(7, 19, 95);
+}
